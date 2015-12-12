@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_menu_edit"
+        android:showAsAction="always"
+        android:title="@string/action_edit"/>
+    <item
+        android:id="@+id/action_confirm"
+        android:icon="@drawable/ic_menu_mark"
+        android:showAsAction="always"
+        android:title="@string/action_confirm"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/abs__ab_share_pack_holo_dark"
+        android:title="@string/action_settings">
+    </item>
+
+</menu>

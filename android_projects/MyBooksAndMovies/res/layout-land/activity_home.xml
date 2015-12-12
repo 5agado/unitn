@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/home_screen_land">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/moviesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="startMoviesActivity"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_movie" />
+
+        <ImageButton
+            android:id="@+id/booksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="startBooksActivity"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_notebook" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+        
+    <com.google.android.gms.common.SignInButton
+    android:id="@+id/sign_in_button"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

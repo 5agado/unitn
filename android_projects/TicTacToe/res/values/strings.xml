@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="play">PLAY</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="settings">SETTINGS</string>
+    
+    <string name="weak_ai">weak</string>
+    <string name="notSoStrong_ai">not so strong</string>
+    <string name="strong_ai">strong</string>
+    <string name="god_ai">GOD</string>
+    
+    <string name="empty">EMPTY</string>
+	<string name="playGrid_name">Play</string>
+	<string name="x_tile">X</string>
+	<string name="o_tile">O</string>
+	<string name="empty_tile">_</string>
+	
+	<string name="gm_ready">GAME_STATE_READY</string>
+    <string name="gm_computer_turn">GAME_STATE_COMPUTER_TURN</string>
+    <string name="gm_player_turn">GAME_STATE_PLAYER_TURN</string>
+    <string name="gm_player_win">GAME_STATE_PLAYER_WIN</string>
+    <string name="gm_computer_win">GAME_STATE_COMPUTER_WIN</string>
+    <string name="gm_tie">GAME_STATE_TIE</string>
+	
+</resources>

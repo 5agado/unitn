@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:onClick="startGame"
+        android:text="@string/play" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="settings"
+        android:text="@string/settings" />
+    
+    <RadioGroup
+        android:id="@+id/radioGameAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        android:visibility="invisible">
+ 
+        <RadioButton
+            android:id="@+id/weakAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weak_ai" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/notSoStrongAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notSoStrong_ai" />
+        
+        <RadioButton
+            android:id="@+id/strongAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strong_ai" />
+        
+        <RadioButton
+            android:id="@+id/godAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/god_ai" />
+ 
+    </RadioGroup>
+
+</LinearLayout>

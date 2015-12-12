@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="num_stars">10</integer>
+    <integer name="default_rating">50</integer>
+    <integer name="max_rating">100</integer>
+    <integer name="min_rating">0</integer>
+</resources>

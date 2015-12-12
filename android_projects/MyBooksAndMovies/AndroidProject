@@ -1,0 +1,76 @@
+- SCAN BARCODE: lancia PIC2SHOP (verificando se e' installato ed eventualmente aprendo Google Play). Quando questo restituisce l'ISBN viene caricato il documento da Internet e mostrato i dettagli del documento (con la possibilitï¿½ di aggiungerlo alla propria collezione).
+
+- Search: cerca per ISBN (se specificato) e si comporta come SCAN BARCODE. Altrimenti cerca per titolo/autore/(genere?) e mostra la lista dei documenti trovati. L'utente puo' quindi aprire un documento specifico per visualizzarne i dettagli ed aggiungerlo alla raccolta.
+
+- Lista dei generi da fare come AutoCompleteTextView, in modo simile ad Author.
+
+- Search globale: mostra inizialmente i dati in locale. Aggiungiamo un bottone che permette la ricerca su Internet.
+
+
+- Io:
+	x ricerca libri
+	x ricerca su internet attivata tramite bottone
+	x barcode
+	x campo sync database (per sapere se oggetto Ã¨ sincronizzato con internet)
+	x aggiungere metodo getNotSync()
+	x salvataggio Cover in database (mettere direttamente in Document ??) e su disco
+	x salvataggio webrating in db
+	x aggiungere possibilitÃ  di eliminare una lista/categoria?
+	x web application redirect (by code and type)
+	x mettere metodo getByRating -> (trasformare rating in  intero normalizzato a 100) -> getbyrating prende valori da 1 a 10
+	x salvataggio lista attori in db
+	- backup database
+	- statistiche di base (n libri, n libri letti/da leggere, rating medio tuo -> anche per film)
+	
+	- sincronizzazione documenti?
+	- librerie all'interno del progetto??
+	- validazione eccessiva??
+	- dove mettere statistiche??
+	- aggiungere liste da codice dopo aver copiato database (prendere nomi da strings.xml)
+	- togliere sync quando importa da csv (oppure salvare comunque titolo in db)
+	
+
+- Alex:
+	- action cerca su internet 	
+	- personalizzazione actionbar se locale (edit) o internet (aggiungi)
+		- ??Basta quella icona
+		- !!ProgressBar per caricamento
+		- !!Controlli rete 
+	x inviare documento come messaggio di testo
+		- Migliorare formato + ??Aggiunta immagine
+	x far funzionare fragment di rating (metodi db)
+		x usare stelle invece che numero
+	x scan barcode ricerca direttamente (controlla dove bottone)
+		- Controllare che non vi siano errori null ect.
+	x salvataggio documenti (layout differenziati) nuovi e modifiche
+		- !!Migliorare interfaccia;	
+	x utilizzare radiobutton per liste da leggere/letti (errore db altrimenti??)
+	x pubblicazione su facebook
+		- !!Controllo rating e destinazione
+		- ??Non mettere progress e lasciare in background
+	??generare due diversi layout per doc details
+	x Settings page
+	
+	!! Grafica: titolo, bottoni, icone iniziali, icone sharing, icona generica
+		un paio di layout differenti per orientamento e dispositivo
+	
+	!!Ordinare import di tutta app
+	??Barcode è ruotato sempre rispetto alla view iniziale
+	x Passaggio books, moview, crea stack
+	x No connection available message per search ISBN, title e Search online
+	!!Sistema layout addlist e lists
+	
+	___________________------________________--
+	- Blank screen hdpi
+	- Google log-out
+	- home screen più alta (landcape valido??)
+	
+	ic_menu_close_clear_cancel.png
+	
+    36x36 for low-density
+    48x48 for medium-density
+    72x72 for high-density
+    96x96 for extra high-density
+
+
+	

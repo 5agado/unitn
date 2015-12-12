@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_social_share"
+        android:showAsAction="always"
+        android:title="@string/action_share">
+        <menu>
+            <item android:id="@+id/share_facebook"
+                  android:icon="@drawable/facebook"
+                  android:title="@string/facebook" />
+            <item android:id="@+id/share_google"
+                  android:icon="@drawable/google"
+                  android:title="@string/googleplus" />
+            <item android:id="@+id/share_astext"
+                  android:icon="@drawable/mail"
+                  android:title="@string/shareAsText" />
+        </menu>
+        </item>
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_menu_edit"
+        android:showAsAction="always"
+        android:title="@string/action_edit"/>
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_menu_delete"
+        android:showAsAction="always"
+        android:title="@string/action_delete"/>
+
+</menu>

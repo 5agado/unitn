@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/backup_and_import" >
+        <Preference
+            android:key="backup"
+            android:title="@string/backup" >
+        </Preference>
+        <Preference
+            android:key="import_backup"
+            android:title="@string/import_backup" >
+        </Preference>
+        <Preference
+            android:key="sync_all"
+            android:title="@string/action_sync_all" >
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/device" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wifi_only"
+            android:summary="@string/wifi_summary"
+            android:title="@string/wifi_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="anon_reports"
+            android:title="@string/feedback_title" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:defaultValue="@string/default_rotate_option"
+            android:entries="@array/rotate_option"
+            android:entryValues="@array/rotate_option"
+            android:key="prefRotateScreen"
+            android:summary="@string/deafault_settings"
+            android:title="@string/rotate_screen_title" />
+    </PreferenceCategory>
+
+    <Preference android:title="@string/help" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://androidbooksandmovies.appspot.com/" />
+    </Preference>
+    <PreferenceCategory android:title="@string/personal" >
+        <EditTextPreference
+            android:defaultValue="@string/default_username"
+            android:key="prefUsername"
+            android:title="@string/username" />
+
+        <ListPreference
+            android:defaultValue="@string/default_theme_color"
+            android:enabled="false"
+            android:entries="@array/theme_color"
+            android:entryValues="@array/theme_color"
+            android:key="prefThemeColor"
+            android:summary="@string/theme_summary"
+            android:title="@string/theme_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
